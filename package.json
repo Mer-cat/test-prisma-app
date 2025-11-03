@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev": "tsx -r dotenv/config main",
+    "dev:full": "npm install && npx prisma migrate dev && npm run dev"
+  },
   "dependencies": {
     "@opentelemetry/api": "^1.9.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.207.0",
@@ -9,6 +13,7 @@
     "@prisma/adapter-pg": "^6.18.0",
     "@prisma/client": "^6.18.0",
     "@prisma/instrumentation": "^6.18.0",
-    "prisma": "^6.18.0"
+    "prisma": "^6.18.0",
+    "tsx": "^4.20.6"
   }
 }
