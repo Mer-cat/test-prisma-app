@@ -46,7 +46,7 @@ async function main() {
     .startActiveSpan("main", async (span) => {
       await Promise.all([
         prisma.user.findUnique({ where: { id: "1" } }),
-        prisma.post.findUnique({ where: { id: "1" } })
+        prisma.post.findUnique({ where: { id: "2" } })
       ]);
 
       span.end();
